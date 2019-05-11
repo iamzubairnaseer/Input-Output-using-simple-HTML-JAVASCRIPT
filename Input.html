@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Input</title>
+</head>
+<body  style="background-color:powderblue";>
+    <p id="Hello"></p>
+    Name: <input type="text" id="i/p" ><br>
+    <label>Hello +Name:</label>
+    <input type="text" id="o/p"><br>
+    <button onclick="Done()" >Write</button>
+<script>
+    function Done(){
+            document.getElementById("o/p").value="Hello " +document.getElementById("i/p").value;
+            op=document.getElementById("i/p").value;
+            document.getElementById("Hello").innerHTML= "Hello "+op;
+    }
+</script>
+</body>
+</html>
